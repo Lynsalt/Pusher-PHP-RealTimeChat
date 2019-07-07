@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Realtime Web Apps</title>
+	<link rel="stylesheet" href="styles/layout.css" />
+</head>
+<body>
+	  <header>
+             <h1>Send a Message with Pusher!</h1>
+      </header>
+      <section>
+           <form method="post" action="post.php">
+           		<label>Your Name <input type="text" name="name" placeholder="i.e John" required></label>
+           		<label>Your Message <input type="text" name="message"  id="message" placeholder="message" required></label>
+              <audio id="audio" src="Ping.mp3" style="display: none;"></audio>
+              <div id="message-text-field"></div>
+           		<input type="submit" class="input-submit" value="send"/>
+            </form>
+       </section>
+       <aside>
+       	     <h2>Received Message</h2>
+       	     <ul id="messages">
+                  <li class="no-messages">No messages yet...</li>
+       	     </ul>
+       </aside>
+       <footer>
+       	       <p>All content &copy; 2019 Lynden Saltibus</p>
+       </footer>
+
+       <script src="http://js.pusher.com/1.12/pusher.min.js"></script>
+       <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+       <script src="scripts/init.js"></script>
+</body>
+</html>

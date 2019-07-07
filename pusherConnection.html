@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Realtime Web Apps</title>
+</head>
+<body>
+      <h1>Testing Pusher</h1>
+
+      <div id="connection_state">&dash;</div>
+      <P>
+          This is a simple demo of how easy it is to integrate Pusaher into an application
+      </P>
+      <script src="https://js.pusher.com/4.4/pusher.min.js"></script>
+      <script type="text/javascript">
+         // Enable pusher logging - don't include this in production
+     
+
+
+         /*var pusher = new Pusher('9d62d9ae3a21c86ba24d');
+         pusher.connection.bind('state_change', function(change){
+             document.getElementById('connection_state').innerHTML = change.current;
+         });*/
+           var pusher = new Pusher('9d62d9ae3a21c86ba24d', {
+            cluster: 'mt1',
+            forceTLS: true
+            });
+        
+
+          var channel = pusher.subscribe('my-channel');
+          
+           channel.bind('my-event', function(data) {
+           alert(JSON.stringify(data));
+         });
+      </script>
+</body>
+</html>
