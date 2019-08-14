@@ -1,20 +1,5 @@
 <?php
-/* 
-		Pusher PHP Library
-	/////////////////////////////////
-	PHP library for the Pusher API.
-	See the README for usage information: https://github.com/pusher/pusher-php-server
-	Copyright 2011, Squeeks. Licensed under the MIT license: http://www.opensource.org/licenses/mit-license.php
-	Contributors:
-		+ Paul44 (http://github.com/Paul44)
-		+ Ben Pickles (http://github.com/benpickles)
-		+ Mastercoding (http://www.mastercoding.nl)
-		+ Alias14 (mali0037@gmail.com)
-		+ Max Williams (max@pusher.com)
-		+ Zack Kitzmiller (delicious@zackisamazing.com)
-		+ Andrew Bender (igothelp@gmail.com)
-		+ Phil Leggetter (phil@leggetter.co.uk)
-*/
+
 class PusherException extends Exception
 {
 }
